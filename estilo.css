@@ -1,0 +1,134 @@
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: tahoma;
+	font-size: 16px;
+	background: #660B4F;
+}
+.contenedor{
+	width: 90%; /*anchura se maneja en porcentaje*/
+	margin: 20px auto;
+	overflow: hidden; /*para colocar elementos en linea*/
+}
+header{
+	background: #F780CD;
+}
+header nav{
+	width: 90%;
+}
+header nav ul{
+	width: 100%; /*anchura se maneja en porcentaje*/
+	overflow: hidden; 
+	list-style: none;
+}
+header nav ul li{
+	float: left;
+}
+header nav ul li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 20px;
+	color: #661E75;
+}
+header nav ul li a:hover{ /*cuando pasa el mouse sobre cada elemento a*/
+	background: #F7B6D8;
+	color: #F56CB3;
+}
+.main{
+	width: 70%; /*anchura se maneja en porcentaje*/
+	background: #C2558D;
+	float: left;
+}
+.main .imagen img{
+	width: 100%; /*anchura se maneja en porcentaje*/
+	vertical-align: top;
+}
+.main .ref{
+	padding: 40px;
+}
+.main .ref article h2{
+	margin-bottom: 15px;
+	color: #753456;
+}
+.main .ref article p{
+	margin-bottom: 15px;
+	line-height: 27px;
+	color: #75135D;
+}
+aside{
+	width: 30%; /*anchura se maneja en porcentaje*/
+	padding: 20px;
+	color: #F56CB3;
+	background: #753665;
+	float: left;
+}
+aside .lateral{
+	margin-bottom: 20px; /*permite al limite inferior una cierta distancia*/
+}
+aside .lateral .titulo{
+	color: #F75EBC;
+	border-bottom: 1px solid #E6C9FB; /*borde o linea inferior*/
+	margin-bottom: 10px;
+}
+aside .lateral ul{
+	list-style: none;
+}
+aside .lateral ul li{
+	border-bottom: 2px solid lightpink;
+	text-align: center;
+}
+aside .lateral ul li a{
+		color: whitesmoke;
+		text-decoration: none;
+}
+aside .lateral ul li a:hover{
+	background: #F7B6D8;
+	color: #F56CB3;
+}
+aside .lateral p{
+	line-height: 27px;
+}
+footer{
+	width: 70%; /*anchura se maneja en porcentaje*/
+	background-color: whitesmoke;
+}
+
+/*uso de mediaquere*/
+@media screen and (max-width: 800%){
+ 	.main{
+ 		width: 100%;
+ 		font-size: 12px;
+ 		background: lightpink;
+ 	}
+ 	aside{
+ 		width: 100%;
+ 	}
+ 	footer{
+ 		width: 100%;
+ 	}
+
+ 	}
+
+ 	@media screen and (max-width: 600px){
+ 		.main{
+ 		width: 100%;
+ 		font-size: 12px;
+ 		background: lightpink;
+ 	}
+ 	aside{
+ 		width: 100%;
+ 	}
+ 	footer{
+ 		width: 100%;
+ 	
+ 	}
+ 	
+
+ 	@media screen and (min-width: 800px){
+ 		body{
+ 			background: whitesmoke;
+ 		}
+ 	}
