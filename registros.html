@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registrar</title>
+	<enlace href="https: //fonts.googleapis.com/css2? family= Mulish & display=swap" rel="hoja de estilo">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<style>
+		.caja{
+			background: #f2f2f2f2;
+			font-family: "Slabo 27px", serif;
+			font-size: 18px;
+			width: 80%;
+			margin: 40px;
+		}
+		.formulario .caja-inputs{
+			padding: 20px;
+			background: orange;
+			border-radius: 6px 6px 0 0;
+		}
+		.formulario input[type="text"], .formulario input[type="correo"]{
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 15px 10px;
+			border: none;
+			border-bottom: 2px solid blueviolet;
+		}
+		.formulario input[type="text"]:focus, .formulario input[type="correo"]{
+			border-bottom: 5px solid limegreen;
+		}
+		.formulario input[type="radio"]{
+			display: none;
+		}
+		.formulario .sexo{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+		.formulario .sexo .hombre{
+			border-radius: 5px 0 0 5px;
+		}
+		.formulario .sexo .mujer{
+			border-radius: 0 5px 0 5px;
+		}
+	
+		.formulario .label-radio{
+			background: limegreen;
+			color: black;
+			padding: 10px;
+			text-align: center;
+			width: 49%;
+			cursor: pointer;
+		}
+		.formulario input[type="radio"]:checked + .label-radio{
+			background: blueviolet;
+		}
+		.formulario .terminos{
+			text-align: center;
+			color: green;
+
+		}
+
+		.formulario .terminos label{
+			margin-left: 10px;
+
+		}
+		.formulario .error{
+			display: none;
+			margin-top: 20px;
+			border-radius: 3px;
+			background: #ce1818;
+			color: #fff;
+			padding: 15px 10px;
+			padding-left: 40px;
+		}
+		.formulario .btn{
+			width: 100%;
+			text-align: center;
+			background: #246eb9;
+			color: #fff;
+			border: none;
+			display: block;
+			padding: 15px 10px;
+			cursor: pointer;
+			border-radius: 0 0 6px 6px;
+			font-family: "Slabo 27px", serif;
+			font-size: 18px;
+		}
+		.formulario .btn:hover{
+			background: #4357;
+		}
+
+		</style>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<nav>
+				<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="calculadora.html">calculadora</a></li>
+				<li><a href="#">Registro</a></li>
+				<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section class="main">
+			<div class="caja">
+				<form action="" class="formulario" id="formulario" name="formulario">
+					<div class="caja-inputs">
+						<input type="text" name="nombre" placeholder="Nombre">
+						<input type="text" name="correo" placeholder="Correo">
+						<div class="sexo">
+							<input type="radio" name="sexo" id="hombre" value="Hombre">
+							<label class="label-radio hombre" for="hombre">Hombre</label>
+							<input type="radio" name="sexo" id="mujer" value="Mujer">
+							<label class="label-radio mujer" for="mujer">Mujer</label>
+						</div>
+						<div class="terminos">
+							<input type="checkbox" name="terminos" id="terminos">
+							<label for="terminos">Acepto los terminos y condiciones</label>
+						</div>
+						<ul class="error" id="error"></ul>	
+					</div>
+					<input type="submit" class="btn" value="Registrarse">
+				</form>
+			</div>
+			
+
+			</section>
+		</section>
+		
+		<aside>
+			<div class="lateral">
+				<h3 class="titulo">Enlaces</h3>
+				<ul>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+				</ul>
+			</div>
+			<div class="lateral">
+				<h3 class="titulo">Información</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</aside>
+		<footer>
+			<p>Cittlys -Derechos Resevados-</p>
+		</footer>
+	</div>
+
+<script src="js/acciones.js"></script>
+
+</body>
+</html>
